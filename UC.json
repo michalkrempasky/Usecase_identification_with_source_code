@@ -1,0 +1,388 @@
+{
+  "usecases": [
+    {
+      "usecase": "UC Game search",
+      "scenario": [{
+        "stepNumber": "1",
+        "stepData": "User choose to search games or overrides UC search in step1"
+      },
+        {
+          "stepNumber": "2",
+          "stepData": "System provides text field to fill up game name"
+        },
+        {
+          "stepNumber": "3",
+          "stepData": "User fills up game name and executes search"
+        },
+        {
+          "stepNumber": "4",
+          "stepData": "System searches product list by games name"
+        },
+        {
+          "stepNumber": "5",
+          "stepData": "System prints on screen games list matched by game name"
+        },
+        {
+          "stepNumber": "6",
+          "stepData": "User can choose to search again and continue by step2"
+        },
+        {
+          "stepNumber": "7",
+          "stepData": "Use case ends"
+        }]
+    },
+    {
+      "usecase": "UC Intermediate item search",
+      "scenario": [{
+        "stepNumber": "1",
+        "stepData": "Empty"
+      }]
+    },
+    {
+      "usecase": "UC Inventory actualization",
+      "scenario": [
+        {
+          "stepNumber": "1",
+          "stepData": "System takes list of items which are successfully paid"
+        },
+        {
+          "stepNumber": "2",
+          "stepData": "System finds users inventory and adds his new products to it"
+        },
+        {
+          "stepNumber": "3",
+          "stepData": "User can choose to activate games from inventory"
+        },
+        {
+          "stepNumber": "4",
+          "stepData": "Use case ends"
+        }
+      ]
+    },
+    {
+      "usecase": "UC Item Search",
+      "scenario": [
+        {
+          "stepNumber": "1",
+          "stepData": "User choose to search items or overrides UC search in step1"
+        },
+        {
+          "stepNumber": "2",
+          "stepData": "System provides text field to fill up item name"
+        },
+        {
+          "stepNumber": "3",
+          "stepData": "User fills up item name and executes search"
+        },
+        {
+          "stepNumber": "4",
+          "stepData": "System searches item database by items name"
+        },
+        {
+          "stepNumber": "5",
+          "stepData": "System prints on screen item list matched by item name"
+        },
+        {
+          "stepNumber": "6",
+          "stepData": "User can choose to search again and continue by step2"
+        },
+        {
+          "stepNumber": "7",
+          "stepData": "Use case ends"
+        }
+      ]
+    },
+    {
+      "usecase": "UC Loan provider",
+      "scenario": [
+        {
+          "stepNumber": "1",
+          "stepData": "Overrides step4 in UC Special payment by selecting from use to pay by Loan provider"
+        },
+        {
+          "stepNumber": "2",
+          "stepData": "System acquire items from inventory"
+        },
+        {
+          "stepNumber": "3",
+          "stepData": "UC Price gathering activates"
+        },
+        {
+          "stepNumber": "4",
+          "stepData": "System counts loan fee from prices he got from UC in step3"
+        },
+        {
+          "stepNumber": "5",
+          "stepData": "System ask user if price of loan is acceptable"
+        },
+        {
+          "stepNumber": "6",
+          "stepData": "User can choose to accept loan"
+        }
+      ]
+    },
+    {
+      "usecase": "UC Login",
+      "scenario": [{
+        "stepNumber": "1",
+        "stepData": "Empty"
+      }]
+    },
+    {
+      "usecase": "UC Payment",
+      "scenario": [
+        {
+          "stepNumber": "1",
+          "stepData": "System calculate price of all products and creates payment"
+        },
+        {
+          "stepNumber": "2",
+          "stepData": "User reviews list of products for which he wants to pay"
+        },
+        {
+          "stepNumber": "3",
+          "stepData": "System loads paymant interface"
+        },
+        {
+          "stepNumber": "4",
+          "stepData": "User choose to pay for products"
+        },
+        {
+          "stepNumber": "5",
+          "stepData": "Empty"
+        },
+        {
+          "stepNumber": "6",
+          "stepData": "User paid for products"
+        },
+        {
+          "stepNumber": "7",
+          "stepData": "Use case ends"
+        }
+      ]
+    },
+    {
+      "usecase": "UC Payment by Paypal",
+      "scenario": [{
+        "stepNumber": "1",
+        "stepData": "Empty"
+      }]
+    },
+    {
+      "usecase": "UC Payment by credit card",
+      "scenario": [{
+        "stepNumber": "1",
+        "stepData": "Empty"
+      }]
+    },
+    {
+      "usecase": "UC Payment for loan",
+      "scenario": [
+        {
+          "stepNumber": "1",
+          "stepData": "User choose to pay for loan"
+        },
+        {
+          "stepNumber": "2",
+          "stepData": "System prints on screen list of users loans"
+        },
+        {
+          "stepNumber": "3",
+          "stepData": "User choose loan to pay for"
+        },
+        {
+          "stepNumber": "4",
+          "stepData": "System ask user to pay by Credit card"
+        },
+        {
+          "stepNumber": "5",
+          "stepData": "User fill in all data required to pay for loan"
+        },
+        {
+          "stepNumber": "6",
+          "stepData": "System proceed transaction"
+        },
+        {
+          "stepNumber": "7",
+          "stepData": "Use case ends"
+        }
+      ]
+    },
+    {
+      "usecase": "UC Price gathering",
+      "scenario": [
+        {
+          "stepNumber": "1",
+          "stepData": "System asks for gathering parameter"
+        },
+        {
+        "stepNumber": "2",
+        "stepData": "System retrieve prices for product from time period"
+      },
+        {
+        "stepNumber": "3",
+        "stepData": "System return prices for matched conditions"
+      }
+      ]
+    },
+    {
+      "usecase": "UC Registration",
+      "scenario": [{
+        "stepNumber": "1",
+        "stepData": "Empty"
+      }]
+    },
+    {
+      "usecase": "UC Search",
+      "scenario": [
+        {
+          "stepNumber": "1",
+          "stepData": "User or Anonymous choose to find product by its name"
+        },
+        {
+          "stepNumber": "2",
+          "stepData": "System offers him text field to fill in product name"
+        },
+        {
+          "stepNumber": "3",
+          "stepData": "User or Anonymous filled up text field and executed search"
+        },
+        {
+          "stepNumber": "4",
+          "stepData": "System gathers data by searching product list"
+        },
+        {
+          "stepNumber": "5",
+          "stepData": "System printed data on screen"
+        },
+        {
+          "stepNumber": "6",
+          "stepData": "System asks about finding something else"
+        },
+        {
+          "stepNumber": "7",
+          "stepData": "User or Anonymous can continue by step2"
+        },
+        {
+          "stepNumber": "8",
+          "stepData": "Use case ends"
+        }
+      ]
+    },
+    {
+      "usecase": "UC Shopping",
+      "scenario": [
+        {
+          "stepNumber": "1",
+          "stepData": "User choose to to buy some products"
+        },
+        {
+          "stepNumber": "2",
+          "stepData": "UC Search activates"
+        },
+        {
+          "stepNumber": "3",
+          "stepData": "For searched product UC Price gathering activates"
+        },
+        {
+          "stepNumber": "4",
+          "stepData": "User adds item to shopping cart"
+        },
+        {
+          "stepNumber": "5",
+          "stepData": "User can continue by step2 again"
+        },
+        {
+          "stepNumber": "6",
+          "stepData": "System creates order with products and prices"
+        },
+        {
+          "stepNumber": "7",
+          "stepData": "Use case ends"
+        }
+      ]
+    },
+    {
+      "usecase": "UC Special Payment",
+      "scenario": [
+        {
+          "stepNumber": "1",
+          "stepData": "Overrides step4 of UC Payment by selecting Special payment"
+        },
+        {
+          "stepNumber": "2",
+          "stepData": "System load user inventory"
+        },
+        {
+          "stepNumber": "3",
+          "stepData": "User chooses his products from inventory"
+        },
+        {
+          "stepNumber": "4",
+          "stepData": "User exchanges his products with exchanging fee 50 percent"
+        },
+        {
+          "stepNumber": "5",
+          "stepData": "System exchange products for money"
+        },
+        {
+          "stepNumber": "6",
+          "stepData": "User choose to pay by exchanged money"
+        },
+        {
+          "stepNumber": "7",
+          "stepData": "System accepts payment"
+        },
+        {
+          "stepNumber": "8",
+          "stepData": "Use case end, continue by step6 of UC Payment"
+        }
+      ]
+    },
+    {
+      "usecase": "UC System selling",
+      "scenario": [
+        {
+          "stepNumber": "1",
+          "stepData": "Overrides step4 in UC Special payment by selecting from use to pay by System seller"
+        },
+        {
+          "stepNumber": "2",
+          "stepData": "System acquire items from inventory"
+        },
+        {
+          "stepNumber": "3",
+          "stepData": "Activate UC Price gathering"
+        },
+        {
+          "stepNumber": "4",
+          "stepData": "System counts selling fee from prices he got from UC in step3"
+        },
+        {
+          "stepNumber": "5",
+          "stepData": "System ask user if fee is acceptable"
+        },
+        {
+          "stepNumber": "6",
+          "stepData": "User accepts fee for selling his inventory and gets money"
+        },
+        {
+          "stepNumber": "7",
+          "stepData": "User pays for products by money he acquired"
+        },
+        {
+          "stepNumber": "8",
+          "stepData": "Use case ends for user and return to UC Payment step7"
+        },
+        {
+          "stepNumber": "9",
+          "stepData": "System is repeats selling products on market until he has money back"
+        },
+        {
+          "stepNumber": "10",
+          "stepData": "Use case ends for system after he sold products"
+        }
+      ]
+    }
+  ]
+}
